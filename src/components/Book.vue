@@ -16,10 +16,5 @@
 </script>
 
 <style scoped>
-  .title {
-    text-transform: uppercase;
-  }
-  .annotation {
-    color: brown;
-  }
+
 </style>
