@@ -10,7 +10,7 @@
       <p class="annotation">{{ book.annotation }}</p>
       <div class="next row no-gutters flex-grow-1 align-items-end">
         <div class="col-xl-12 col-md-6 col-sm-9 col-lg-9 col-9">
-          <a class="btn btn-outline-primary btn-block" href="/authors/stephen_king/books/shining/shining.html"
+          <a class="btn btn-outline-primary btn-block" :href="{{ book.link}}"
              role="button">Детальніше</a>
         </div>
       </div>
