@@ -1,12 +1,24 @@
 <template>
     <div>
-      <Book/>
+      <Book :book="book" v-for="(book, index) of books" :key="index"/>
     </div>
 </template>
 
 <script>
+  import { db } from '../firebase/db'
+  import Book from '../components/Book.vue'
+
   export default {
-    name: 'Books'
+    name: 'Books',
+    data () {
+      return {
+        books: []
+      }
+    },
+    firebase: {
+      books: db.ref('books')
+    },
+    components: { Book }
   }
 </script>
 
