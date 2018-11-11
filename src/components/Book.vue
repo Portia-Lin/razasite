@@ -1,22 +1,21 @@
 <template>
-  <div class="container">
-    <div class="row-books row no-gutters">
-      <div class="book-img col-xl-3 col-lg-2 col-md-4 col-sm-4">
-        <img  class="iimg" :src="book.image" :alt="book.title">
-      </div>
-      <div class="about-itm col-xl-3 col-lg-4 col-md-8 col-sm-8">
-        <h3 class="book-title">{{ book.title }}</h3>
-        <h4 class="book-author">{{ book.author }}</h4>
-        <p class="genre">Жанр: {{ book.genre }}</p>
-        <p class="annotation">{{ book.annotation }}</p>
-        <div class="next row no-gutters flex-grow-1 align-items-end">
-          <div class="col-xl-12 col-md-6 col-sm-9 col-lg-9 col-9">
-            <a class="btn btn-outline-primary btn-block" href="/authors/stephen_king/books/shining/shining.html" role="button">Детальніше</a>
-          </div>
+  <fragment>
+    <div class="book-img col-xl-3 col-lg-2 col-md-4 col-sm-4">
+      <img class="iimg" :src="book.image" :alt="book.title">
+    </div>
+    <div class="about-itm col-xl-3 col-lg-4 col-md-8 col-sm-8">
+      <h3 class="book-title">{{ book.title }}</h3>
+      <h4 class="book-author">{{ book.author }}</h4>
+      <p class="genre">Жанр: {{ book.genre }}</p>
+      <p class="annotation">{{ book.annotation }}</p>
+      <div class="next row no-gutters flex-grow-1 align-items-end">
+        <div class="col-xl-12 col-md-6 col-sm-9 col-lg-9 col-9">
+          <a class="btn btn-outline-primary btn-block" href="/authors/stephen_king/books/shining/shining.html"
+             role="button">Детальніше</a>
         </div>
       </div>
     </div>
-  </div>
+  </fragment>
 </template>
 
 <script>

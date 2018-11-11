@@ -1,6 +1,8 @@
 <template>
-    <div>
-      <Book :book="book" v-for="(book, index) of books" :key="index"/>
+    <div class="container">
+      <div class="row-books row no-gutters">
+        <Book :book="book" v-for="(book, index) of books" :key="index"/>
+      </div>
     </div>
 </template>
 
