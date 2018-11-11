@@ -13,6 +13,7 @@
     "grpc": "^1.16.0",
     "jquery": "^3.3.1",
     "vue": "^2.5.17",
+    "vue-fragment": "^1.2.2",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.5"
   },
