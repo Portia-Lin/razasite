@@ -6,7 +6,7 @@
     <div class="about-itm col-xl-3 col-lg-4 col-md-8 col-sm-8">
       <h3 class="book-title">{{ book.title }}</h3>
       <h4 class="book-author">{{ book.author }}</h4>
-      <p class="genre">Жанр: {{ book.genre }}</p>
+      <p class="genre">Жанр: {{ book.genre_id }}</p>
       <p class="annotation">{{ book.annotation }}</p>
       <div class="next row no-gutters flex-grow-1 align-items-end">
         <div class="col-xl-12 col-md-6 col-sm-9 col-lg-9 col-9">

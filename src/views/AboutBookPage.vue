@@ -1,6 +1,6 @@
 <template>
   <div class="container" v-if="book">
-    <div class="row">
+    <div class="about-book row">
       <div class="book-img col-xl-4 col-lg-4 col-md-4 col-sm-7">
         <img class="iimg" :src="book.image" :alt="book.title">
       </div>
@@ -8,9 +8,9 @@
         <h3 class="book-title">{{ book.title }}</h3>
         <h4 class="book-author">{{ book.author }}</h4>
         <p class="original-book-title"><span class="original-book-title-label">Оригінальна назва: </span>{{ book.originalTitle }}</p>
-        <p class="original-book-language"><span class="original-book-language-label">Мова оригіналу: {{ book.language }}</span></p>
-        <p class="genre"><span class="genre-label">Жанр: {{ book.genre }}</span></p>
-        <p class="book-series"><span class="book-series-label">Серія: {{ book.series }}</span></p>
+        <p class="original-book-language"><span class="original-book-language-label">Мова оригіналу: </span>{{ book.language }}</p>
+        <p class="genre"><span class="genre-label">Жанр: </span>{{ book.genre_id }}</p>
+        <p class="book-series"><span class="book-series-label">Серія: </span>{{ book.series }}</p>
         <p class="book-series-number"><span class="book-series-number-label">Номер книги в серії: </span>{{ book.seriesNumber }}</p>
         <p class="book-year"><span class="book-year-label">Рік: </span>{{ book.year }}</p>
         <p class="isbn"><span class="isbn-label">ISBN: </span>{{ book.isbn }}</p>
@@ -52,7 +52,123 @@
 </script>
 
 <style scoped>
-  .book-img .iimg {
+  .about-book {
+    margin-bottom: 30px;
+  }
+
+  .about-book .book-img {
+    margin-bottom: 25px;
+  }
+
+  .about-book .book-img .iimg {
     width: 100%;
+  }
+
+  .about-book .book-description .book-title {
+    color: #007bff;
+  }
+
+  .about-book .book-description .book-author {
+    color: #007bff;
+    margin-bottom: 25px;
+  }
+
+  .about-book .book-description .book-author a:hover{
+    text-decoration: none;
+  }
+
+  .about-book .book-description .original-book-title {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .original-book-title-label {
+    color: gray;
+  }
+
+  .about-book .book-description .original-book-language {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .original-book-language-label {
+    color: gray;
+  }
+
+  .about-book .book-description .genre {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .genre a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .about-book .book-description .genre a:hover {
+    color: #007bff;
+  }
+
+  .about-book .book-description .genre-label {
+    color: gray;
+  }
+
+  .about-book .book-description .book-series {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .book-series a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .about-book .book-description .book-series a:hover {
+    color: #007bff;
+  }
+
+  .about-book .book-description .book-series-label {
+    color: gray;
+  }
+
+  .about-book .book-description .book-series-number {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .book-series-number-label {
+    color: gray;
+  }
+
+  .about-book .book-description .book-year {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .book-year-label {
+    color: gray;
+  }
+
+  .about-book .book-description .isbn {
+    margin-bottom: 0;
+  }
+
+  .about-book .book-description .isbn-label {
+    color: gray;
+  }
+
+  .about-book .book-description .book-language {
+    margin-bottom: 25px;
+  }
+
+  .about-book .book-description .book-language-label {
+    color: gray;
+  }
+
+  .about-book .book-description .book-annotation-label {
+    color: gray;
+    margin-bottom: 10px;
+  }
+
+  .about-book .book-description .book-annotation-text {
+    margin-bottom: 10px;
+  }
+
+  #book-annotation-last-text {
+    margin-bottom: 25px;
   }
 </style>
