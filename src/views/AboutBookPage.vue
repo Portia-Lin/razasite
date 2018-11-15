@@ -19,7 +19,7 @@
         <p class="book-annotation-text" id="book-annotation-last-text">{{ book.annotation}}</p>
         <div class="taptodwn row no-gutters">
           <div class="col-xl-5 col-lg-6 col-md-8 col-sm-7 col-9">
-            <a class=" btn btn-outline-primary btn-block" href="/authors/terry_pratchett/books/the_colour_of_magic/files/the_colour_of_magic.fb2" download role="button">Завантажити</a>
+            <a class=" btn btn-outline-primary btn-block" :href="book.file" download role="button">Завантажити</a>
           </div>
         </div>
       </div>
