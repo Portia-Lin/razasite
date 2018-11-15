@@ -34,16 +34,19 @@
     name: 'AboutBookPage',
     data () {
       return {
-        book: null
+        book: null,
+        id: null
       }
     },
+    created () {
+      this.id = parseInt(this.$route.params.id)
+    },
     mounted () {
-      db.ref('books')
-        .child(this.$route.params.id)
-        .once('value')
-        .then(snapshot => {
-          this.book = snapshot.val()
+      db.ref('books').orderByChild('id').equalTo(this.id).on('value', (snapshot) => {
+        snapshot.forEach((data) => {
+          this.book = data.val()
         })
+      })
     }
   }
 </script>
