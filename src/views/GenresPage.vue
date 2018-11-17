@@ -18,7 +18,7 @@
       }
     },
     firebase: {
-      books: db.ref('genres')
+      genres: db.ref('genres')
     },
     components: { Genre }
   }
