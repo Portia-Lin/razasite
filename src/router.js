@@ -6,6 +6,7 @@ import GenresPage from './views/GenresPage.vue'
 import AuthorsPage from './views/AuthorsPage.vue'
 import AboutBookPage from './views/AboutBookPage.vue'
 import AboutGenrePage from './views/AboutGenrePage.vue'
+import AboutAuthorPage from './views/AboutAuthorPage.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/genres/:id',
       name: 'about-genre-page',
       component: AboutGenrePage
+    },
+    {
+      path: '/authors/:id',
+      name: 'about-author-page',
+      component: AboutAuthorPage
     }
   ]
 })

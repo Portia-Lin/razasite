@@ -73,4 +73,13 @@
     max-height: calc(1.5em * 6)
 
   }
+  @media (max-width: 576px) {
+    .book-title, .book-author {
+      text-align: center;
+    }
+
+    .next {
+      justify-content: center;
+    }
+  }
 </style>
