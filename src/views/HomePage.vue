@@ -1,13 +1,11 @@
 <template>
     <div class="container">
       <div class="test col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <h1>WELCOME</h1>
+        <p>WELCOME</p>
         <br>
-        <h1>WELCOME</h1>
+        <p>to</p>
         <br>
-        <h1>WELCOME</h1>
-        <br>
-        <h1>WELCOME</h1>
+        <p>H E L L</p>
       </div>
     </div>
 </template>
@@ -21,5 +19,8 @@
 <style scoped>
   .test {
     text-align: center;
+  }
+  .test p {
+    font-size: 60px;
   }
 </style>
