@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row-genres row no-gutters">
+    <div class="row-genres row">
       <Genre :genre="genre" v-for="(genre, index) of genres" :key="index"/>
     </div>
   </div>
@@ -25,5 +25,7 @@
 </script>
 
 <style scoped>
-
+  .row-genres {
+    margin: 50px 10px;
+  }
 </style>
