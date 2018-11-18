@@ -35,14 +35,14 @@ export default new Router({
       component: GenresPage
     },
     {
+      path: '/genres/:slug',
+      name: 'about-genre-page',
+      component: AboutGenrePage
+    },
+    {
       path: '/authors',
       name: 'authors-page',
       component: AuthorsPage
-    },
-    {
-      path: '/genres/:id',
-      name: 'about-genre-page',
-      component: AboutGenrePage
     },
     {
       path: '/authors/:id',
