@@ -1,8 +1,6 @@
 <template>
   <div class="container">
-    <div class="row-authors row ">
       <Author :author="author" v-for="(author, index) of authors" :key="index"/>
-    </div>
   </div>
 </template>
 

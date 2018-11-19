@@ -1,10 +1,10 @@
 <template>
   <div class="container" v-if="genre">
     <div class="about-genre row no-gutters">
-      <div class="genre-description col-xl-12 col-lg-8 col-md-8 col-sm-12">
         <h3 class="book-genre">{{ genre.genre }}</h3>
+    </div>
+    <div class="about-genre row">
         <Book :book="book" v-for="book of books" :key="book['key']"/>
-      </div>
     </div>
   </div>
 </template>

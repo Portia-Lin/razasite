@@ -1,13 +1,17 @@
 <template>
     <div class="container">
-      <div class="test col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <h1>WELCOME</h1>
+      <div class="test">
+        <p class="w">WELCOME</p>
         <br>
-        <h1>WELCOME</h1>
+        <p class="t">to</p>
         <br>
-        <h1>WELCOME</h1>
-        <br>
-        <h1>WELCOME</h1>
+        <p class="h">H E L L</p>
+        <div class="row justify-content-center">
+          <div class="devil col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10">
+            <img src="/images/devil.png" alt="">
+          </div>
+        </div>
+        <p class="m">the devil made me do it</p>
       </div>
     </div>
 </template>
@@ -21,5 +25,23 @@
 <style scoped>
   .test {
     text-align: center;
+  }
+  .test .w {
+    font-size: 60px;
+  }
+  .test .t {
+    font-size: 40px;
+  }
+  .test .h {
+    font-size: 70px;
+    color: #ca1c26;
+    margin-bottom: 40px;
+  }
+  .test .m {
+    color: gray;
+  }
+  .devil img {
+    width: 100%;
+    margin-bottom: 20px;
   }
 </style>
