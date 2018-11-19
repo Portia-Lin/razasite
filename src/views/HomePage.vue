@@ -11,7 +11,7 @@
             <img src="/images/devil.png" alt="">
           </div>
         </div>
-        <p>the devil made me do it</p>
+        <p class="m">the devil made me do it</p>
       </div>
     </div>
 </template>
@@ -35,9 +35,13 @@
   .test .h {
     font-size: 70px;
     color: #ca1c26;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
+  }
+  .test .m {
+    color: gray;
   }
   .devil img {
     width: 100%;
+    margin-bottom: 20px;
   }
 </style>
