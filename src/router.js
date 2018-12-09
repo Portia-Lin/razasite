@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Tdmmdi from './views/Tdmmdi.vue'
 import HomePage from './views/HomePage.vue'
 import BooksPage from './views/BooksPage.vue'
 import GenresPage from './views/GenresPage.vue'
@@ -48,6 +49,11 @@ export default new Router({
       path: '/authors/:id',
       name: 'about-author-page',
       component: AboutAuthorPage
+    },
+    {
+      path: '/tdmmdi',
+      name: 'tdmmdi',
+      component: Tdmmdi
     }
   ]
 })

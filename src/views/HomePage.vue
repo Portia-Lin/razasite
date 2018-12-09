@@ -1,17 +1,11 @@
 <template>
     <div class="container">
-      <div class="test">
-        <p class="w">WELCOME</p>
-        <br>
-        <p class="t">to</p>
-        <br>
-        <p class="h">H E L L</p>
-        <div class="row justify-content-center">
-          <div class="devil col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10">
-            <img src="/images/devil.png" alt="">
-          </div>
+      <div class="row">
+        <div class=" content col-xl-12">
+          <p class="logo">Ласкаво просимо до сайту <span class="b">BOOK</span>  <span class="m">MARKET</span> — електронну бібліотеку.</p>
+          <p>Тут ви можете безкоштовно завантажувати електронні книги в форматі <span class="desc">*.fb2</span> та <span class="desc">*.epub</span>.</p>
+          <p></p>
         </div>
-        <p class="m">the devil made me do it</p>
       </div>
     </div>
 </template>
@@ -23,25 +17,16 @@
 </script>
 
 <style scoped>
-  .test {
-    text-align: center;
+  .content {
+    padding: 0 50px;
   }
-  .test .w {
-    font-size: 60px;
+  .logo .b {
+    color: #0464F1;
   }
-  .test .t {
-    font-size: 40px;
+  .logo .m {
+    color: #ADD9D3;
   }
-  .test .h {
-    font-size: 70px;
-    color: #ca1c26;
-    margin-bottom: 40px;
-  }
-  .test .m {
+  .desc {
     color: gray;
-  }
-  .devil img {
-    width: 100%;
-    margin-bottom: 20px;
   }
 </style>
