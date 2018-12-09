@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <div class="wrapper">
+    <div class="content">
       <router-view/>
     </div>
     <Footer/>
@@ -17,7 +17,7 @@
     flex-direction: column;
     height: 100%;
   }
-  .wrapper {
+  .content {
     flex: 1 0 auto;
   }
 </style>
