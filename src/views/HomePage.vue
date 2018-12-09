@@ -1,5 +1,5 @@
 <template>
-    <div class="container wrapper">
+    <div class="container">
       <div class="row">
         <div class="content col-xl-12">
           <p class="logo">Ми раді бачити вас на сайті <span class="b">BOOK </span><span class="m">MARKET</span> — електронній бібліотеці.</p>
@@ -16,9 +16,6 @@
 </script>
 
 <style scoped>
-  .wrapper {
-    flex: 1 0 auto;
-  }
   .content {
     padding: 0 50px;
   }
