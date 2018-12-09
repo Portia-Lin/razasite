@@ -45,6 +45,9 @@
 </script>
 
 <style scoped>
+  .container {
+    margin-top: 20px;
+  }
   .about-author {
     margin-bottom: 30px;
   }

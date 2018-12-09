@@ -35,7 +35,7 @@
 
 <style scoped>
   header {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .logo {
     font-size: 40px;
