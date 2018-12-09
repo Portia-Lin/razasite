@@ -27,7 +27,6 @@
 <style scoped>
   .row-books > div:nth-child(n) {
     padding: 20px;
-
   }
 
   .book-img .iimg {
