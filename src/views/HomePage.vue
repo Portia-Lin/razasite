@@ -2,9 +2,8 @@
     <div class="container">
       <div class="row">
         <div class=" content col-xl-12">
-          <p class="logo">Ласкаво просимо до сайту <span class="b">BOOK</span>  <span class="m">MARKET</span> — електронну бібліотеку.</p>
+          <p class="logo">Ми раді бачити вас на сайті <span class="b">BOOK</span>  <span class="m">MARKET</span> — електронній бібліотеці.</p>
           <p>Тут ви можете безкоштовно завантажувати електронні книги в форматі <span class="desc">*.fb2</span> та <span class="desc">*.epub</span>.</p>
-          <p></p>
         </div>
       </div>
     </div>
