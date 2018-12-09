@@ -31,11 +31,13 @@
 
   .book-img .iimg {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .about-itm {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .about-itm .book-title {
